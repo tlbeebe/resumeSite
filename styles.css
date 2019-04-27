@@ -1,0 +1,42 @@
+* {box-sizing: border-box}
+
+body {
+  display:grid;
+  grid-template-rows: 52px 1fr;
+  height:100vh; width:100vw;
+  margin:0; padding:0;
+  background: HSLA(300, 57%, 35%, 1.0);
+}
+
+menu {
+  display:grid;
+  margin:0px;
+  padding:0px;
+  background: #eee;
+  justify-items:stretch;
+  align-items:stretch;
+  cursor:pointer;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width:100%;
+}
+
+menuitem {
+  padding:.8rem;
+  text-align:center;
+  border-right:1px solid #dadada;
+  font-size:1.3rem;
+}
+
+menuitem.active {
+  background: HSLA(329, 57%, 35%, 1.0);
+  border-right:none;
+  color:white;
+}
+
+ol#todos {
+  margin:1rem;
+  padding:1rem;
+  padding-left:2rem;
+  font-size:1.5rem;
+  background: #f5f5f5;
+}
